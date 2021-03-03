@@ -38,6 +38,10 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test-recipe.php">Recipe</a>
+                </li>
+
                 <?php if (isset($_SESSION['uid'])) {
 
                 echo '
