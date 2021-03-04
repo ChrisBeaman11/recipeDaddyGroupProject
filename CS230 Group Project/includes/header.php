@@ -52,6 +52,9 @@ session_start();
                 <a class="nav-link" href="profile.php">Profile</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="upload.php">Upload</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="includes/logout.php">Logout</a>
             </li>';
         }
