@@ -9,7 +9,7 @@ if (isset($_GET['recipe-submit'])) {
     $recname = $_GET['recname'];
     $ingredients = $_GET['ingredients'];
     $steps = $_GET['steps'];
-    $uploader = $_GET['uploader'];
+    $uploader = $_SESSION['uname'];
 
         $sql = "INSERT INTO recipes (name, ingredients, steps, creator) VALUES ('$recname', '$ingredients', '$steps', '$uploader')";
         

@@ -1,8 +1,11 @@
 <?php
 require "includes/header.php";
 require 'includes/dbhandler.php';
+?>
+<link rel="stylesheet" href="css/test-recipe.css">
+<?php
 
-$rec = "SELECT * FROM recipes WHERE rid=1";
+$rec = "SELECT * FROM recipes WHERE rid=(SELECT max(rid) FROM recipes)";
 $res = mysqli_query($conn, $rec);
 $row = mysqli_fetch_array($res);
 $exp = ';';

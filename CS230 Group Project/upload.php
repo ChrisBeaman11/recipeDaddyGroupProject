@@ -22,19 +22,16 @@ if(isset($_SESSION['uid'])) {
             <form class="form-signin" action="includes/recipe-upload-helper.php" method="get">
                 <h2>Greetings <?php echo $rec_user?></h2>
                 <div class="form-group">
-                    <textarea name="uploader" id="uploader" cols="30" rows="2" placeholder="Give alias for recipe"
-                        style="text-align: center;"></textarea>
-                </div>
-                    <textarea name="recname" id="recname" cols="30" rows="2" placeholder="Recipe name here"
+                    <textarea name="recname" id="recname" cols="40" rows="2" placeholder="Recipe name here"
                         style="text-align: center;"></textarea>
                 </div>
                 <div class="form-group">
                     <textarea name="ingredients"
-                        id="List Ingrededients Here separated by semicolons" cols="30" rows="10"
+                        id="List Ingrededients Here separated by semicolons" cols="40" rows="10"
                         placeholder="List Ingrededients Here separated by semicolons" style="text-align: center;"></textarea>
                 </div>
                 <div class="form-group">
-                    <textarea name="steps" id="steps" cols="30" rows="10"
+                    <textarea name="steps" id="steps" cols="40" rows="10"
                         placeholder="List Recipe Steps Here separated by semicolons"
                         style="text-align: center;"></textarea>
                 </div>
