@@ -46,10 +46,10 @@ session_start();
 
                 echo '
                 <li class="nav-item">
-                <a class="nav-link" href="gallery.php">Gallery</a>
-            </li>
-                <li class="nav-item">
                 <a class="nav-link" href="profile.php">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recipe-gallery.php">Recipes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="upload.php">Upload</a>

@@ -2,14 +2,34 @@
 require 'includes/dbhandler.php';
 require 'includes/header.php'; 
 require 'includes/review-helper.php';
+
+
+
 ?>
 
 <main>
+    <link rel="stylesheet" href="css/review.css">
     <span id="testAvg"></span>
-    <div class="conatiner" align='center' style='max-width: 800 px;'>
+    <div class="container" align='center' style='max-width: 800 px;'>
         <div class="my-auto">
-            <form id="review-form" action="includes/review-helper.php" method="post">
 
+            <div class="card">
+                <?php
+                $id = $_GET['id'];
+                $sql = 'SELECT * FROM recipes WHERE rid='.$id.'';
+                $query = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($query);
+                echo '<div class = "card">
+                    <img src="gallery/'.$row["pic"].'">
+                    <h3>'.$row["name"].'</h3>
+                    <p>'.$row["ingredients"].'</p>
+                    <p>'.$row["steps"].'</p>
+                </a>
+                </div>';
+                ?>
+            </div>
+
+            <form id="review-form" action="includes/review-helper.php" method="post">
                 <div class="container">
                     <i class="fa fa-star fa-2x star-rev" data-index="1"></i>
                     <i class="fa fa-star fa-2x star-rev" data-index="2"></i>
@@ -18,16 +38,19 @@ require 'includes/review-helper.php';
                     <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
                 </div>
                 <div class="form-group" style="margin-top: 15px;">
-                    <label class = "title-label" for="reveiw-title" style="font-size:16px; font-weight: bold;" >Title</label>
+                    <label class="title-label" for="reveiw-title"
+                        style="font-size:16px; font-weight: bold;">Title</label>
                     <input type="text" name="review-title" id="review-title" style="width: 100px; margin-bottom: 10px;">
-                    <textarea name="review" id="review-text" cols="90" rows="3" placeholder="Enter a comment..."></textarea>
-                    
-                <input type="hidden" name="rating" id="rating">
-                <input type="hidden" name="item_id" value="<?php echo $_GET['id'];?>">
+                    <textarea name="review" id="review-text" cols="90" rows="3"
+                        placeholder="Enter a comment..."></textarea>
+
+                    <input type="hidden" name="rating" id="rating">
+                    <input type="hidden" name="item_id" value="<?php echo $_GET['id'];?>">
                 </div>
 
                 <div class="form-group">
-                    <button class = "btn btn-outline-danger" type="submit" name="review-submit" id="review-submit" style = "width: 100%">Review</button>
+                    <button class="btn btn-outline-danger" type="submit" name="review-submit" id="review-submit"
+                        style="width: 100%">Review</button>
                 </div>
             </form>
         </div>
