@@ -3,6 +3,8 @@ require 'includes/header.php';
 require 'includes/dbhandler.php';
 ?>
 
+<title>RecipeDaddy - Profile</title>
+
 <main>
     <link rel="stylesheet" href="css/profile.css">
 

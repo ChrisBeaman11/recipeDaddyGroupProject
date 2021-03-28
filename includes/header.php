@@ -7,7 +7,6 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RecipeDaddy.com</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -38,9 +37,6 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="about.php">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="test-recipe.php">Recipe</a>
-                </li>
 
                 <?php if (isset($_SESSION['uid'])) {
 
@@ -59,6 +55,9 @@ session_start();
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="includes/logout.php">Logout</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../contact.php">Contact Us</a>
             </li>';
             
         }

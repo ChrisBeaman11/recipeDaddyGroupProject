@@ -4,6 +4,7 @@ require 'includes/dbhandler.php';
 ?>
 
 <main>
+<title>RecipeDaddy - Upload Recipe </title>
     <link rel="stylesheet" href="css/profile.css">
 
     <?php

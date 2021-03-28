@@ -3,6 +3,9 @@ require "includes/header.php"
 ?>
 
 <main>
+
+    <title>RecipeDaddy - Signup</title>
+
     <link rel="stylesheet" href="css/signup.css">
 
     <div class="bg-cover">

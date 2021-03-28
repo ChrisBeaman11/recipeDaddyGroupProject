@@ -4,6 +4,8 @@ require "includes/header.php";
 
 <main>
 
+<title>RecipeDaddy - Login</title>
+
     <link rel="stylesheet" href="css/login.css">
 
     <div class="bg-cover">

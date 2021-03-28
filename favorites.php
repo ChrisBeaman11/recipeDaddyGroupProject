@@ -4,6 +4,8 @@ session_start();
 ?>
 
 <main>
+
+    <title>RecipeDaddy - Favorites</title>
     <link rel="stylesheet" href="css/gallery.css">
     <h1>Favorites</h1>
     <div class = "gallery-container">

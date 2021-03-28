@@ -1,20 +1,20 @@
 main {
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 
 }
 
 p {
 
-color: rgb(0, 0, 0);
+color: rgb( 0, 40, 85);
 border: 3 px black;
 
 }
 
 .about {
 
-background: rgb(1, 162, 255);
+background: rgb(234, 170, 0);
 padding: 8px;
 
 

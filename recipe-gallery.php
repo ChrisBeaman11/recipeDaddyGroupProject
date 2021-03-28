@@ -3,9 +3,18 @@ require 'includes/header.php';
 ?>
 
 <main>
+
+    <title>RecipeDaddy - Recipes</title>
     <link rel="stylesheet" href="css/gallery.css">
-    <h1>Recipes</h1>
-    <div class = "gallery-container">
+
+    <div class="about">
+        <h1 style="font-size: 48px">Recipe Daddy - About Us</h1>
+        <p>Here are the uploaded recipes!</p>
+
+    </div>
+
+
+    <div class="gallery-container">
         <?php
             include_once 'includes/dbhandler.php';
             $sql = "SELECT * FROM recipes ORDER BY rid DESC";
@@ -23,5 +32,5 @@ require 'includes/header.php';
             }
         ?>
     </div>
-    
+
 </main>
