@@ -36,7 +36,7 @@ session_start();
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="about.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="test-recipe.php">Recipe</a>
