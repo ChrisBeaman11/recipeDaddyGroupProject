@@ -1,14 +1,29 @@
 h1{
     text-align: center;
+    color: rgb(0, 40, 85);
+    font-weight: bold;
 
 }
+
+.about {
+
+    background: rgb(234, 170, 0);
+    padding: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0, 40, 85);
+    
+    }
+
 
 h3{
    color: goldenrod; 
 }
 
 p{
-    color: grey;
+
+    text-align: center;
+    color: rbg(0, 40, 85);
 
 }
 
@@ -24,6 +39,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .card{
@@ -33,6 +49,12 @@ img{
     max-width: 280px;
     height: auto;
     padding: 5px;
+    box-shadow: 10px 10px 5px grey;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0, 40, 85);
+    
+
 }
 
 .gallery_container a{
@@ -45,4 +67,10 @@ img{
 .gallery_container a:hover{
     opacity: 70%;
     text-decoration-color: goldenrod;
+}
+
+.footer {
+
+
+    
 }

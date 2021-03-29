@@ -9,7 +9,7 @@ require 'includes/header.php';
 
     <div class="about">
         <h1 style="font-size: 48px">Recipe Daddy - About Us</h1>
-        <p>Here are the uploaded recipes!</p>
+        <p style="font-size: 18px">Here are the uploaded recipes!</p>
 
     </div>
 
@@ -31,6 +31,11 @@ require 'includes/header.php';
                 </div>';
             }
         ?>
+    </div>
+
+    <div class="footer">
+    <footer>Copyright RecipeDaddy</footer>
+
     </div>
 
 </main>
