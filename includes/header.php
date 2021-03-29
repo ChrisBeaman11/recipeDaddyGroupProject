@@ -65,10 +65,10 @@ session_start();
             else {
 
                 echo '<li class="nav-item">
-                <a class="nav-link" href="signup.php">Signup</a>
+                <a class="nav-link" href="../signup.php">Signup</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="login.php">Login</a>
+                <a class="nav-link" href="../login.php">Login</a>
                 </li>';
             }
                 ?>
