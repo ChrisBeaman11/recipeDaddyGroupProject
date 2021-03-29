@@ -49,7 +49,7 @@ if(isset($_POST['login-submit'])) {
                 exit();
             }
                 else {
-                    header("Location: ../profile.php?error=WrongPass");
+                    header("Location: ../login.php?error=WrongPass");
                     exit();
                 }    
         }
