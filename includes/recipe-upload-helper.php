@@ -14,7 +14,7 @@ if (isset($_GET['recipe-submit'])) {
         $sql = "INSERT INTO recipes (name, ingredients, steps, creator) VALUES ('$recname', '$ingredients', '$steps', '$uploader')";
         
         mysqli_query($conn, $sql);
-        header("Location: ../index.php?success=UploadWin");
+        header("Location: ../about.php?success=UploadWin");
         exit();
     } 
 
