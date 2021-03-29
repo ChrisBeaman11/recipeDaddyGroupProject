@@ -12,15 +12,9 @@ require "includes/header.php";
 
 </div>
 
-<div class="column">
-            <div class="card">
-  
+<div class="footer">
+        <footer> &#169 Copyright RecipeDaddy </footer>
 
-
-
-                </div>
-
-            </div>
-        </div>
+    </div>
 
 </main>

@@ -34,7 +34,7 @@ require 'includes/header.php';
     </div>
 
     <div class="footer">
-    <footer> &#169 Copyright RecipeDaddy </footer>
+        <footer> &#169 Copyright RecipeDaddy </footer>
 
     </div>
 
