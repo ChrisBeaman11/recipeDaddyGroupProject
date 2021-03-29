@@ -7,7 +7,13 @@ session_start();
 
     <title>RecipeDaddy - Favorites</title>
     <link rel="stylesheet" href="css/gallery.css">
-    <h1>Favorites</h1>
+
+<div class="about" >
+    <h1 style= "font-size: 48px" >Recipe Daddy - Favorites</h1>
+    <p>Favorites are shown here!</p>
+
+</div>
+
     <div class = "gallery-container">
         <?php
             include_once 'includes/dbhandler.php';
@@ -36,4 +42,10 @@ session_start();
         ?>
     </div>
     
+    <div class="footer">
+        <footer> &#169 Copyright RecipeDaddy </footer>
+
+    </div>
+
+
 </main>
