@@ -52,7 +52,7 @@ if(isset($_POST['signup-submit'])) {
                     $sqlImg = "INSERT INTO profiles (uname, fname) VALUES ('$username', '$fname')";
                     mysqli_query($conn, $sqlImg);
 
-                    header("Location: ../signup.php?signup=success");
+                    header("Location: ../login.php?signup=success");
                     exit();
 
                 }
