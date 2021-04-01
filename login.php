@@ -1,9 +1,9 @@
+
 <?php
 require "includes/header.php";
 ?>
 
 <main>
-
 <title>RecipeDaddy - Login</title>
 
     <link rel="stylesheet" href="css/login.css">
@@ -38,8 +38,6 @@ require "includes/header.php";
                     <span class="sr-only">Next</span>
                 </a>
             </div> -->
-
-
         </div>
 
         <div class="h-40 center-me">
@@ -66,9 +64,6 @@ require "includes/header.php";
 
             </div>
         </div>
-
-
-
 
     </div>
 
