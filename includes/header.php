@@ -78,10 +78,11 @@ session_start();
                 ?>
 
             </ul>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+                <form class="form-search form-inline my-2 my-lg-0" action="search.php" method="post">
+                    <input class="form-control mr-sm-2" type="search" name="search-text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" name="search-submit" type="search">Search</button>
+                </form>
 
         </div>
     </nav>
