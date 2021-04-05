@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 28, 2021 at 06:57 PM
+-- Generation Time: Apr 05, 2021 at 03:40 PM
 -- Server version: 5.7.33-0ubuntu0.18.04.1
 -- PHP Version: 7.2.24-0ubuntu0.18.04.7
 
@@ -19,30 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `project`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `favorites`
---
-
-CREATE TABLE `favorites` (
-  `pid` int(11) NOT NULL,
-  `rid` int(11) NOT NULL,
-  `favid` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
-
---
--- Dumping data for table `favorites`
---
-
-INSERT INTO `favorites` (`pid`, `rid`, `favid`) VALUES
-(7, 1, 1),
-(7, 2, 5),
-(7, 3, 6),
-(7, 4, 7),
-(7, 5, 8),
-(7, 6, 9);
 
 -- --------------------------------------------------------
 
@@ -63,7 +39,8 @@ CREATE TABLE `profiles` (
 
 INSERT INTO `profiles` (`pid`, `fname`, `uname`, `profpic`) VALUES
 (1, 'Michael', 'MLemon', '../profiles/60492c9c4501b9.46073446.jpg'),
-(3, 'Karl', 'Dougtherouge', '../profiles/6060f7c485f849.38234243.jpg');
+(2, '123', '123', '../profiles/606106292fbbe0.19040306.jpg'),
+(3, 'Bob', 'bobross', '../images/default.jpg');
 
 -- --------------------------------------------------------
 
@@ -89,8 +66,24 @@ INSERT INTO `recipes` (`rid`, `name`, `ingredients`, `steps`, `creator`, `pic`) 
 (2, 'Chicken', 'Chicken\r\nSalt\r\nFood\r\nEeat', 'asfgadfg', 'MrLemon', '../images/default.jpg'),
 (3, 'Beef Chili', '2 lbs. ground beef; 2 tbsp. chili powder; 1 tbsp. cumin; 1 tsp. salt 28 oz. can crushed tomatoes; 16 oz. beef broth; 1/2 cup dark brown sugar; two cans of beans', 'sear beef in pot; add salt and seasonings and mix; add tomatoes and cook for a few minutes; add beef broth, sugar, and beans', 'MLemon', '../images/default.jpg'),
 (4, 'food', 'food\r\nsalt\r\npepper', 'mix\r\neat', 'MrLemon', '../images/default.jpg'),
-(5, 'Bingus Soap', 'Bingus\r\nSoup', 'Mix bingus and soup\r\nEat', 'Dougtherouge', '../images/default.jpg'),
-(6, 'Colege', 'colege', 'eat colege', 'Dougtherouge', '../images/default.jpg');
+(5, 'Plumbus', 'test', 'test', '123', '../images/default.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `revid` int(11) NOT NULL COMMENT 'id for each review',
+  `itemid` int(11) NOT NULL COMMENT 'item being reviewed',
+  `uname` varchar(80) NOT NULL,
+  `title` varchar(60) NOT NULL,
+  `reviewtext` text NOT NULL,
+  `revdate` datetime NOT NULL,
+  `ratingnum` int(11) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0' COMMENT 'at least 1 item to review'
+) ENGINE=InnoDB DEFAULT CHARSET=utf16;
 
 -- --------------------------------------------------------
 
@@ -117,17 +110,12 @@ INSERT INTO `users` (`uid`, `fname`, `lname`, `uname`, `password`, `email`) VALU
 (3, 'gfdhhg', 'dfghdfg', 'hdfghdfh', '$2y$10$mC899L2c1TFHHcgS3KZae.QUVWQLxVJ/kf2iyeZA6OdUyqYY23HGa', 'dsg@dfgdg.com'),
 (4, 'Mr', 'Le', 'myt', '$2y$10$5f.doP3ae7c4UfwEVjFT6.4YI9dvGfWDJfpXstajZ4aKEeh6FxPI6', 'sda@s.com'),
 (5, 'Michael', 'Lemon', 'MLemon', '$2y$10$y7PBkPuyV3vZFEw19.wJIeY5eCykmBABkN4XYDYza0eQ7rf4FggQS', 'mlem@mle.com'),
-(7, 'Karl', 'Scheib', 'Dougtherouge', '$2y$10$H9h8OG/lwgRVb/3b67V5zOHk4SsqaoS4T.hvOf3Uisy2CphyVY7QC', 'eldonscheib@gmail.com');
+(6, '123', '123', '123', '$2y$10$WoDnHEV0BPuBV8Igbn2SB.K/NUvW44SXFZWDYVkI/488cPdyFE.qe', '1@1.com'),
+(7, 'Bob', 'Ross', 'bobross', '$2y$10$9Dt9/ptNaNM3TpKq3lyhQenyFwQYQyMMV5eTIXrZ4ZQ.gY2.Y/sVy', '1@1.com');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `favorites`
---
-ALTER TABLE `favorites`
-  ADD PRIMARY KEY (`favid`);
 
 --
 -- Indexes for table `profiles`
@@ -142,6 +130,12 @@ ALTER TABLE `recipes`
   ADD PRIMARY KEY (`rid`);
 
 --
+-- Indexes for table `reviews`
+--
+ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`revid`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -152,11 +146,6 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `favorites`
---
-ALTER TABLE `favorites`
-  MODIFY `favid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
---
 -- AUTO_INCREMENT for table `profiles`
 --
 ALTER TABLE `profiles`
@@ -165,7 +154,12 @@ ALTER TABLE `profiles`
 -- AUTO_INCREMENT for table `recipes`
 --
 ALTER TABLE `recipes`
-  MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `rid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `revid` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id for each review';
 --
 -- AUTO_INCREMENT for table `users`
 --
