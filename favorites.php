@@ -8,13 +8,13 @@ session_start();
     <title>RecipeDaddy - Favorites</title>
     <link rel="stylesheet" href="css/gallery.css">
 
-<div class="about" >
-    <h1 style= "font-size: 48px" >Recipe Daddy - Favorites</h1>
-    <p>Favorites are shown here!</p>
+    <div class="about">
+        <h1 style="font-size: 48px">Recipe Daddy - Favorites</h1>
+        <p>Favorites are shown here!</p>
 
-</div>
+    </div>
 
-    <div class = "gallery-container">
+    <div class="gallery-container">
         <?php
             include_once 'includes/dbhandler.php';
             $userid = $_SESSION['uid'];
@@ -41,7 +41,7 @@ session_start();
             }
         ?>
     </div>
-    
+
     <div class="footer">
         <footer> &#169 Copyright RecipeDaddy </footer>
 
