@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 05, 2021 at 03:40 PM
+-- Generation Time: Apr 16, 2021 at 02:16 PM
 -- Server version: 5.7.33-0ubuntu0.18.04.1
 -- PHP Version: 7.2.24-0ubuntu0.18.04.7
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `project`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `favorites`
+--
+
+CREATE TABLE `favorites` (
+  `pid` int(11) NOT NULL,
+  `rid` int(11) NOT NULL,
+  `favid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Dumping data for table `favorites`
+--
+
+INSERT INTO `favorites` (`pid`, `rid`, `favid`) VALUES
+(7, 1, 1),
+(7, 2, 5),
+(7, 3, 6),
+(7, 4, 7),
+(7, 5, 8),
+(7, 6, 9),
+(7, 7, 10);
 
 -- --------------------------------------------------------
 
@@ -118,6 +143,12 @@ INSERT INTO `users` (`uid`, `fname`, `lname`, `uname`, `password`, `email`) VALU
 --
 
 --
+-- Indexes for table `favorites`
+--
+ALTER TABLE `favorites`
+  ADD PRIMARY KEY (`favid`);
+
+--
 -- Indexes for table `profiles`
 --
 ALTER TABLE `profiles`
@@ -145,6 +176,11 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `favorites`
+--
+ALTER TABLE `favorites`
+  MODIFY `favid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `profiles`
 --
