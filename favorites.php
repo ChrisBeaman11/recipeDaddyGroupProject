@@ -46,6 +46,4 @@ session_start();
         <footer> &#169 Copyright RecipeDaddy </footer>
 
     </div>
-
-
 </main>
