@@ -3,7 +3,7 @@
 $servename = "localhost";
 $DBuname = "phpmyadmin";
 $DBPass = "cs230lab";
-$DBname = "CS230";
+$DBname = "project";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
 
