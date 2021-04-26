@@ -43,7 +43,6 @@ require 'includes/review-helper.php';
 
                     <form id="review-form" action="includes/review-helper.php" method="post">
 
-                        <div class="container">
 
                             <i class="fa fa-star fa-2x star-rev" data-index="1"></i>
                             <i class="fa fa-star fa-2x star-rev" data-index="2"></i>
@@ -51,7 +50,6 @@ require 'includes/review-helper.php';
                             <i class="fa fa-star fa-2x star-rev" data-index="4"></i>
                             <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
 
-                        </div>
 
                 </div>
                 <div class="form-group" style="margin-top: 15px;">
@@ -136,7 +134,7 @@ $(document).ready(function() {
         };
         url = prefix + id;
         xhttp.open("GET", url, true);
-        xhttp.send();
+        xhttp.send();Rating: 5
     }
 });
 </script>
