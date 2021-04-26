@@ -11,7 +11,7 @@ require "includes/header.php"
     <div class="bg-cover">
         <div class="h-100 container center-me">
             <div class="my-auto">
-                <div class="signup-form"></div>
+                <div class="signup-form">
                 <form action="includes/signup-helper.php" method="post">
 
                     <h1> Please Sign Up </h1>
@@ -41,10 +41,11 @@ require "includes/header.php"
                         required>
 
                     <button class="btn btn-lg btn-primary btn-block" name="signup-submit" type="submit">Sign Up</button>
+                    <a href="login.php" class="button">Already have an account? Click to Log in</a>
                     <p class="mt-5 mb-3 text-muted">&copy; 2020-9999</p>
 
                 </form>
-
+                </div>
             </div>
         </div>
     </div>
