@@ -28,12 +28,12 @@ if(isset($_SESSION['uid'])) {
                 </div>
                 <div class="form-group">
                     <textarea name="ingredients"
-                        id="List Ingrededients Here separated by semicolons" cols="40" rows="10"
-                        placeholder="List Ingrededients Here separated by semicolons" style="text-align: center;"></textarea>
+                        id="List Ingrededients Here" cols="40" rows="10"
+                        placeholder="List Ingrededients Here" style="text-align: center;"></textarea>
                 </div>
                 <div class="form-group">
                     <textarea name="steps" id="steps" cols="40" rows="10"
-                        placeholder="List Recipe Steps Here separated by semicolons"
+                        placeholder="List Recipe Steps Here"
                         style="text-align: center;"></textarea>
                 </div>
                 <div class="form-group">
