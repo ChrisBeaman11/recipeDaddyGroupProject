@@ -44,11 +44,11 @@ require 'includes/review-helper.php';
                     <form id="review-form" action="includes/review-helper.php" method="post">
 
 
-                            <i class="fa fa-star fa-2x star-rev" data-index="1"></i>
-                            <i class="fa fa-star fa-2x star-rev" data-index="2"></i>
-                            <i class="fa fa-star fa-2x star-rev" data-index="3"></i>
-                            <i class="fa fa-star fa-2x star-rev" data-index="4"></i>
-                            <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
+                            <em class="fa fa-star fa-2x star-rev" data-index="1"></em>
+                            <em class="fa fa-star fa-2x star-rev" data-index="2"></em>
+                            <em class="fa fa-star fa-2x star-rev" data-index="3"></em>
+                            <em class="fa fa-star fa-2x star-rev" data-index="4"></em>
+                            <em class="fa fa-star fa-2x star-rev" data-index="5"></em>
 
 
                 </div>
