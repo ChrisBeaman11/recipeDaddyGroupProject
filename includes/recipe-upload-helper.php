@@ -12,10 +12,18 @@ if (isset($_GET['recipe-submit'])) {
     $uploader = $_SESSION['uname'];
 
         $sql = "INSERT INTO recipes (name, ingredients, steps, creator) VALUES ('$recname', '$ingredients', '$steps', '$uploader')";
+        $stmt = mysqli_stmt_init($conn);
+
+        if(!mysqli_stmt_prepare($stmt, $sql)) {
+            header("Location: ../upload.php?error=(ò_óˇ)");
+            exit();
+        }
         
-        mysqli_query($conn, $sql);
-        header("Location: ../about.php?success=UploadWin");
-        exit();
+        else {
+            mysqli_query($conn, $sql);
+            header("Location: ../about.php?success=UploadWin");
+            exit();
+        }
     } 
 
 

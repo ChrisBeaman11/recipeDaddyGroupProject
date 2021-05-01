@@ -1,8 +1,9 @@
 <?php
+// Main Homepage for Website
+
 require "includes/header.php";
 ?>
 <main>
-
 <title>Recipe Daddy - About</title>
 
 <link rel="stylesheet" href="css/about.css">
