@@ -1,6 +1,6 @@
+<?php
 // Main Homepage for Website
 
-<?php
 require "includes/header.php";
 ?>
 <main>
