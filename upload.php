@@ -1,4 +1,7 @@
 <?php
+
+// Upload.php is responsible for allowing the user to upload a recipe, with a title, ingredients, and steps
+
 require 'includes/header.php';
 require 'includes/dbhandler.php';
 ?>
