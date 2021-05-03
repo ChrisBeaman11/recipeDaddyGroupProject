@@ -1,10 +1,12 @@
-
 <?php
 require "includes/header.php";
+
+// Page that logins in user to website
+
 ?>
 
 <main>
-<title>RecipeDaddy - Login</title>
+    <title>RecipeDaddy - Login</title>
 
     <link rel="stylesheet" href="css/login.css">
 
@@ -40,6 +42,8 @@ require "includes/header.php";
             </div> -->
         </div>
 
+        <!-- Code below creates the login form-->
+
         <div class="h-40 center-me">
             <div class="my-auto">
                 <form class="form-signin" action="includes/login-helper.php" method="post">
@@ -58,7 +62,7 @@ require "includes/header.php";
 
                             <button class="btn btn-lg btn-primary btn-block" name="login-submit" type="submit">Sign
                                 in!</button>
-                                <a href="signup.php" class="button">Don't have an account? Click to Sign up</a>
+                            <a href="signup.php" class="button">Don't have an account? Click to Sign up</a>
                             <p class="mt-5 mb-3 text-muted">&copy; 2020-9999</p>
 
                 </form>

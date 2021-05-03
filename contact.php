@@ -1,4 +1,7 @@
 <?php
+
+// Page that displays the group contact information.
+
 require "includes/header.php";
 ?>
 

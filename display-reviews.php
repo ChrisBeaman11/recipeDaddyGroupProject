@@ -1,5 +1,7 @@
 <?php
 
+// Displays the reviews for a given recipe.
+
 $servename = "localhost";
 $DBuname = "phpmyadmin";
 $DBPass = "cs230lab";
@@ -12,11 +14,11 @@ if (!$conn) {
     # code...
 }
 
+// Retrieves the Review from the reviews table
+
 $item = $_GET['id'];
 
-
 $sql="SELECT * FROM reviews WHERE itemid ='$item'" ;
-
 
 $result = mysqli_query($conn, $sql);
 
@@ -26,6 +28,8 @@ if(mysqli_num_rows($result) > 0 ){
         $propic = "SELECT profpic FROM profiles WHERE uname = '$uname'; ";
         $res = mysqli_query($conn, $propic);
         $picpath = mysqli_fetch_assoc($res);
+
+// Formatting for an individual review
 
         echo '<div class="card mx-auto" style="width: 30%; padding: 5px; margin-bottom: 10px;">
         <div class = "media" >
@@ -38,15 +42,11 @@ if(mysqli_num_rows($result) > 0 ){
             </div>
         </div>
     </div>';
-
-        
-
     }
 }
+
 else{
-    echo '<h5 style = " text-align: center;">No Reviews yet! Be the first!</h5>';
+    echo '<h5 style = " text-align: center;">No Reviews yet! Be the first!</h5>';    
 
-
-    
 }
 
