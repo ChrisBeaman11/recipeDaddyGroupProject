@@ -1,4 +1,6 @@
 <?php
+// Displays the uploaded recipes in the recipe gallery.
+
 require 'includes/header.php';
 ?>
 
@@ -16,6 +18,9 @@ require 'includes/header.php';
 
     <div class="gallery-container">
         <?php
+
+        // Retrieves the uploaded recipes from the project table
+
             include_once 'includes/dbhandler.php';
             $sql = "SELECT * FROM recipes ORDER BY rid DESC";
             $query = mysqli_query($conn, $sql);

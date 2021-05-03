@@ -48,23 +48,24 @@ session_start();
                 <a class="nav-link" href="profile.php">Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="recipe-gallery.php">Recipes</a>
+                <a class="nav-link" href="recipe-gallery.php">Recipe Gallery</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="upload.php">Upload</a>
+                <a class="nav-link" href="upload.php">Upload Recipe</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="favorites.php">Favorites</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cart.php">Shopping Cart</a>
+            <a class="nav-link" href="cart.php">Shopping Cart</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="includes/logout.php">Logout</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.php">Contact Us</a>
-            </li>';
+            <a class="nav-link" href="contact.php">Contact Us</a>
+            </li>'
+            ;
             
         }
 
