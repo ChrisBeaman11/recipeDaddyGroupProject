@@ -35,6 +35,15 @@ require 'includes/review-helper.php';
                 </div>
 
             </form>
+            <form id="shoppingcart-button" action="includes/cart-helper.php" method="get">
+
+                <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
+                <div class="form-group">
+                    <button class="btn btn-outline-primary" type="submit" name="cart-submit" id="cart-submit"
+                        style="width: 100%">Add to Cart</button>
+                </div>
+
+            </form>
 
 
             <div class="container" align="center" style="max-width: 800px;">

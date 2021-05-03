@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 22, 2021 at 04:53 PM
+-- Generation Time: May 03, 2021 at 04:43 PM
 -- Server version: 5.7.33-0ubuntu0.18.04.1
 -- PHP Version: 7.2.24-0ubuntu0.18.04.7
 
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `project`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `pid` int(11) NOT NULL,
+  `rid` int(11) NOT NULL,
+  `scid` int(11) NOT NULL COMMENT 'shopping cart ID'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`pid`, `rid`, `scid`) VALUES
+(10, 4, 1),
+(10, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -46,7 +66,8 @@ INSERT INTO `favorites` (`pid`, `rid`, `favid`) VALUES
 (6, 3, 10),
 (9, 1, 11),
 (9, 5, 12),
-(9, 5, 13);
+(9, 5, 13),
+(10, 5, 14);
 
 -- --------------------------------------------------------
 
@@ -161,6 +182,12 @@ INSERT INTO `users` (`uid`, `fname`, `lname`, `uname`, `password`, `email`) VALU
 --
 
 --
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`scid`);
+
+--
 -- Indexes for table `favorites`
 --
 ALTER TABLE `favorites`
@@ -195,10 +222,15 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `scid` int(11) NOT NULL AUTO_INCREMENT COMMENT 'shopping cart ID', AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `favorites`
 --
 ALTER TABLE `favorites`
-  MODIFY `favid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `favid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `profiles`
 --

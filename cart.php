@@ -19,7 +19,7 @@ session_start();
             include_once 'includes/dbhandler.php';
             $userid = $_SESSION['uid'];
             //echo $userid;
-            $sql = 'SELECT * FROM favorites WHERE pid='.$userid.'';
+            $sql = 'SELECT * FROM cart WHERE pid='.$userid.'';
             //echo $sql;
             $query = mysqli_query($conn, $sql);
             //echo $query;
