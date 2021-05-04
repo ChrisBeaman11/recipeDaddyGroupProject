@@ -46,6 +46,19 @@ img{
 
 }
 
+#cart{
+    display: block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stuff{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card{
     border-radius: 10px;
     margin: 10px;
