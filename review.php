@@ -10,6 +10,26 @@ require 'includes/review-helper.php';
     <div class="container" align='center' style='max-width: 800 px;'>
         <div class="my-auto">
 
+
+            <form id="favorites-button" action="includes/favorites-helper.php" method="get">
+
+                <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit" name="favorites-submit" id="favorites-submit"
+                        style="width: 100%">Favorite/Unfavorite</button>
+                </div>
+
+            </form>
+            <form id="shoppingcart-button" action="includes/cart-helper.php" method="get">
+
+                <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
+                <div class="form-group">
+                    <button class="btn btn-outline-success" type="submit" name="cart-submit" id="cart-submit"
+                        style="width: 100%">Add to Cart</button>
+                </div>
+
+            </form>
+
             <div class="card">
                 <?php
                 $id = $_GET['id'];
@@ -26,24 +46,7 @@ require 'includes/review-helper.php';
                 ?>
             </div>
 
-            <form id="favorites-button" action="includes/favorites-helper.php" method="get">
 
-                <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
-                <div class="form-group">
-                    <button class="btn btn-outline-primary" type="submit" name="favorites-submit" id="favorites-submit"
-                        style="width: 100%">Favorite</button>
-                </div>
-
-            </form>
-            <form id="shoppingcart-button" action="includes/cart-helper.php" method="get">
-
-                <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
-                <div class="form-group">
-                    <button class="btn btn-outline-primary" type="submit" name="cart-submit" id="cart-submit"
-                        style="width: 100%">Add to Cart</button>
-                </div>
-
-            </form>
 
 
             <div class="container" align="center" style="max-width: 800px;">
@@ -53,19 +56,19 @@ require 'includes/review-helper.php';
                     <form id="review-form" action="includes/review-helper.php" method="post">
 
 
-                            <em class="fa fa-star fa-2x star-rev" data-index="1"></em>
-                            <em class="fa fa-star fa-2x star-rev" data-index="2"></em>
-                            <em class="fa fa-star fa-2x star-rev" data-index="3"></em>
-                            <em class="fa fa-star fa-2x star-rev" data-index="4"></em>
-                            <em class="fa fa-star fa-2x star-rev" data-index="5"></em>
+                        <em class="fa fa-star fa-2x star-rev" data-index="1"></em>
+                        <em class="fa fa-star fa-2x star-rev" data-index="2"></em>
+                        <em class="fa fa-star fa-2x star-rev" data-index="3"></em>
+                        <em class="fa fa-star fa-2x star-rev" data-index="4"></em>
+                        <em class="fa fa-star fa-2x star-rev" data-index="5"></em>
 
 
                 </div>
                 <div class="form-group" style="margin-top: 15px;">
                     <label class="title-label" for="reveiw-title"
                         style="font-size:16px; font-weight: bold;">Title</label>
-                    <input type="text" name="review-title" id="review-title" style="width: 100px; margin-bottom: 10px;">
-                    <textarea name="review" id="review-text" cols="90" rows="3"
+                    <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px;">
+                    <textarea name="review" id="review-text" style="width: 100%;"
                         placeholder="Enter a comment..."></textarea>
 
                     <input type="hidden" name="rating" id="rating">
@@ -143,7 +146,8 @@ $(document).ready(function() {
         };
         url = prefix + id;
         xhttp.open("GET", url, true);
-        xhttp.send();Rating: 5
+        xhttp.send();
+        Rating: 5
     }
 });
 </script>

@@ -16,6 +16,10 @@
             $sql = "INSERT INTO favorites (pid, rid) VALUES('$userid', '$recipeid');";
             mysqli_query($conn, $sql);
         }
+        else {
+            $sql = "DELETE FROM favorites WHERE pid = '$userid' AND rid = '$recipeid';";
+            mysqli_query($conn, $sql);
+        }
     }
     header("Location: ../review.php?id=$recipeid");
     exit();
