@@ -3,6 +3,23 @@
 CSS Formating for a user's profile page.
 */
 
+main {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
+.about {
+
+    background: rgb(234, 170, 0);
+    padding: 8px;
+    text-align: center;
+    color: rgb(0, 40, 85);
+    font-weight: bold;
+    
+}
+
 .center-me {
 
     display:flex;
@@ -11,6 +28,15 @@ CSS Formating for a user's profile page.
     text-align: "center";
 
 
+}
+
+.bg-cover {
+    background-image: url("../images/background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
 }
 
 #prof-display {

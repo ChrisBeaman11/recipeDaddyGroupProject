@@ -2,6 +2,12 @@
 CSS Formating for the recipe gallery.
 */
 
+main {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
 h1{
     text-align: center;
     color: rgb(0, 40, 85);
@@ -18,7 +24,7 @@ h1{
     color: rgb(0, 40, 85);
     font-weight: bold;
     
-    }
+}
 
 
 h3{

@@ -4,6 +4,13 @@ background-color: rgb(234,170,0);
 
 }
 
+main {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
 .center-me {
 
     display:flex;
@@ -12,4 +19,13 @@ background-color: rgb(234,170,0);
     text-align: "center";
 
 
+}
+
+.bg-cover {
+    background-image: url("../images/background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
 }

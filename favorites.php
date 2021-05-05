@@ -4,7 +4,7 @@ session_start();
 ?>
 
 <main>
-
+    <title>RecipeDaddy - Favorites</title>
     <link rel="stylesheet" href="css/gallery.css">
 
 <div class="about" >
@@ -29,7 +29,7 @@ session_start();
                     <h3>'.$row1["name"].'</h3>
                     <p>Ingredients: '.$row1["ingredients"].'</p>
                     <p>Directions: '.$row1["steps"].'</p>
-                    <p>Creator: '.$row["creator"].'</p>
+                    <p>Creator: '.$row1["creator"].'</p>
                 </a>
                 </div>';
 

@@ -4,7 +4,8 @@
 require "includes/header.php";
 ?>
 <main>
-    <title>Recipe Daddy - About</title>
+    <title>RecipeDaddy - About Us</title>
+    <div class=bg-cover>
 
     <link rel="stylesheet" href="css/about.css">
 
@@ -16,5 +17,5 @@ require "includes/header.php";
             <div class="footer">
                 <footer> &#169 Copyright RecipeDaddy </footer>
             </div>
-
+    </div>
 </main>

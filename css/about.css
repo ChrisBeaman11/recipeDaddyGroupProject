@@ -5,6 +5,15 @@ main {
 
 }
 
+.bg-cover {
+    background-image: url("../images/background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+}
+
 
 h1 {
 
@@ -32,11 +41,7 @@ font-weight: bold;
 
 }
 
-img {
-    height: 120px;
-    width: 120px;
 
-}
 
 .column {
 
@@ -51,20 +56,26 @@ CSS Formating for the about page.
 */
 
 
+img{
+    max-width: 300px;
+    max-height: 200px;
+}
 .card {
   
     box-shadow: 0px 4px 8px 0 #b3b3b3f5;
     padding: 0 16px 0 16px;
     border: 3px solid black;
+    width: 300px;
+    height: 300px;
+    
 }
 
-    .footer {
-        text-align: center;
-        background: rgb(234, 170, 0);
-        padding: 8px;
-        border-style: solid;
-        border-width: 4px;
-        border-color: rgb(0, 40, 85);
+.footer {
+    text-align: center;
+    background: rgb(234, 170, 0);
+    padding: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(0, 40, 85);
     
-
 }

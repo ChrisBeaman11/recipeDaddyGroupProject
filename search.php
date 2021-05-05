@@ -4,12 +4,12 @@ include_once 'includes/dbhandler.php';
 ?>
 
 <link rel="stylesheet" href="css/gallery.css">
-<title>RecipeDaddy - Recipes</title>
+<title>RecipeDaddy - Search Results</title>
 <link rel="stylesheet" href="css/gallery.css">
 
 <div class="about">
-    <h1 style="font-size: 48px">Recipe Daddy - About Us</h1>
-    <p style="font-size: 18px">Here are the uploaded recipes!</p>
+    <h1 style="font-size: 48px">Recipe Daddy - Search Results</h1>
+    <p style="font-size: 18px">Here are the uploaded recipes that you requested!</p>
 
 </div>
 <div class="gallery-container">

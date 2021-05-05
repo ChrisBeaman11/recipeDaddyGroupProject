@@ -5,6 +5,7 @@ require 'includes/dbhandler.php';
 
 <main>
     <link rel="stylesheet" href="css/profile.css">
+    <title>RecipeDaddy - Profile</title>
 
     <script>
     function triggered() {
