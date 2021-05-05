@@ -21,7 +21,7 @@ if (isset($_GET['recipe-submit'])) {
         
         else {
             mysqli_query($conn, $sql);
-            header("Location: ../about.php?success=UploadWin");
+            header("Location: ../recipe-gallery.php?success=UploadWin");
             exit();
         }
     } 
