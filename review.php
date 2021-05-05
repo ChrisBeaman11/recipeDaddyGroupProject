@@ -5,6 +5,7 @@ require 'includes/review-helper.php';
 ?>
 
 <main>
+    <link rel="stylesheet" href="css/review.css">
     <span id="testAvg"></span>
 
     <div class="container" align='center' style='max-width: 800 px;'>
@@ -16,7 +17,7 @@ require 'includes/review-helper.php';
                 <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
                 <div class="form-group">
                     <button class="btn btn-outline-info" type="submit" name="favorites-submit" id="favorites-submit"
-                        style="width: 100%">Favorite/Unfavorite</button>
+                        style="width: 500px">Favorite/Unfavorite</button>
                 </div>
 
             </form>
@@ -25,12 +26,11 @@ require 'includes/review-helper.php';
                 <input type="hidden" name="rid" id="rid" value=<?php echo $_GET['id'];?>></input>
                 <div class="form-group">
                     <button class="btn btn-outline-success" type="submit" name="cart-submit" id="cart-submit"
-                        style="width: 100%">Add to Cart</button>
+                        style="width: 500px">Add to Cart</button>
                 </div>
 
             </form>
 
-            <div class="card">
                 <?php
                 $id = $_GET['id'];
                 $sql = 'SELECT * FROM recipes WHERE rid='.$id.'';
@@ -39,18 +39,17 @@ require 'includes/review-helper.php';
                 echo '<div class = "card">
                     <img src="gallery/'.$row["pic"].'">
                     <h3>'.$row["name"].'</h3>
-                    <p>'.$row["ingredients"].'</p>
-                    <p>'.$row["steps"].'</p>
+                    <p>Ingredients: '.$row["ingredients"].'</p>
+                    <p>Directions: '.$row["steps"].'</p>
                 </a>
                 </div>';
                 ?>
-            </div>
 
             <div class="container" " style="max-width: 800px;">
 
                 <div class="my-auto">
 
-                    <form id="review-form" style="padding: 10px;" action="includes/review-helper.php" method="post">
+                    <form id="review-form" style="padding: 30px;" action="includes/review-helper.php" method="post">
 
 
                         <em class="fa fa-star fa-2x star-rev" data-index="1"></em>

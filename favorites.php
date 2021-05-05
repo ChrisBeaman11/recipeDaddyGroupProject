@@ -27,8 +27,9 @@ session_start();
                 <a href="review.php?id='.$row1['rid'].'">
                     <img src="gallery/'.$row1["pic"].'">
                     <h3>'.$row1["name"].'</h3>
-                    <p>'.$row1["ingredients"].'</p>
-                    <p>'.$row1["steps"].'</p>
+                    <p>Ingredients: '.$row1["ingredients"].'</p>
+                    <p>Directions: '.$row1["steps"].'</p>
+                    <p>Creator: '.$row["creator"].'</p>
                 </a>
                 </div>';
 

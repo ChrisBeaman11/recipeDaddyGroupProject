@@ -27,8 +27,9 @@ include_once 'includes/dbhandler.php';
                             <a href="review.php?id='.$row['rid'].'">
                                 <img src="gallery/'.$row["pic"].'">
                                 <h3>'.$row["name"].'</h3>
-                                <p>'.$row["ingredients"].'</p>
-                                <p>'.$row["steps"].'</p>
+                                <p>Ingredients: '.$row["ingredients"].'</p>
+                                <p>Directions: '.$row["steps"].'</p>
+                                <p>Creator: '.$row["creator"].'</p>
                             </a>
                             </div>';
             }
