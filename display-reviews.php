@@ -26,7 +26,7 @@ if(mysqli_num_rows($result) > 0) {
         $picpath = mysqli_fetch_assoc($res);
 
         echo '
-       <div class="card-mx-auto" style="width: 30%; padding: 5px; margin-bottom: 10px;  border: 3px solid black;>
+       <div class="card-mx-auto" style="width: 30%; padding: 5px; margin-bottom: 10px;  border: 3px solid rgb(0, 40, 85);>
         <div class="media">
             <img class="mr-3" src="'.$picpath['profpic'].'" style="max-width: 75px; max-height: 75px; border-radius: 50%;">
             <div class="media-body>
