@@ -46,14 +46,11 @@ require 'includes/review-helper.php';
                 ?>
             </div>
 
-
-
-
-            <div class="container" align="center" style="max-width: 800px;">
+            <div class="container" " style="max-width: 800px;">
 
                 <div class="my-auto">
 
-                    <form id="review-form" action="includes/review-helper.php" method="post">
+                    <form id="review-form" style="padding: 10px;" action="includes/review-helper.php" method="post">
 
 
                         <em class="fa fa-star fa-2x star-rev" data-index="1"></em>
@@ -65,7 +62,7 @@ require 'includes/review-helper.php';
 
                 </div>
                 <div class="form-group" style="margin-top: 15px;">
-                    <label class="title-label" for="reveiw-title"
+                    <label class="title-label" for="review-title"
                         style="font-size:16px; font-weight: bold;">Title</label>
                     <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px;">
                     <textarea name="review" id="review-text" style="width: 100%;"

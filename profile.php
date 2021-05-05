@@ -44,11 +44,6 @@ if(isset($_SESSION['uid'])){
                             class="form-control" style="display: none;">
                     </div>
 
-                    <!-- <div class="form-group">
-                        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio..."
-                            style="text-align: center;"></textarea>
-                    </div> -->
-
                     <div class="form-group">
                         <button type="submit" name="prof-submit"
                             class="btn btn-success btn-lg btn-block">Upload</button>

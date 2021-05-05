@@ -39,7 +39,7 @@ session_start();
         ?>
         <div>
             <form id="clear-button" action="includes/clear-cart.php" method="get">
-                <div class="form-group">
+                <div class="form-group" style="padding: 10px;">
                     <button class="btn btn-outline-danger" type="submit" name="clear-submit" id="clear-submit"
                         style="width: 25%;">Clear Shopping Cart</button>
                 </div>

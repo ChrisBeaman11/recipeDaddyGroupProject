@@ -6,6 +6,7 @@ h1{
     text-align: center;
     color: rgb(0, 40, 85);
     font-weight: bold;
+    
 
 }
 
@@ -32,12 +33,14 @@ p{
 }
 
 img{
+    color:rgb(234, 170, 0);
     max-width: 220px;
     height: 220px;
     margin-top: 10px;
 }
 
 .gallery-container{
+
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -70,9 +73,6 @@ img{
     border-style: solid;
     border-width: 4px;
     border-color: rgb(0, 40, 85);
-    
-    
-
 }
 
 .gallery_container a{
