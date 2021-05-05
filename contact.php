@@ -53,20 +53,19 @@ require "includes/header.php";
 
         <div class="column">
             <div class="card">
-                <img src="images/IMG_2221.JPG">
+                <img src="images/null.jpg">
                 <div class="container">
                     <p>Chase Swick</p>
                     <p style="font-size: 12px">Email: caswick@mix.wvu.edu</p>
                 </div>
             </div>
-
         </div>
     </div>
 
     <div class="row">
         <div class="column">
             <div class="card">
-                <img src="images/luke.jpeg">
+                <img src="images/IMG_2221.JPG">
                 <div class="container">
                     <p>Joseph Shepard</p>
                     <p style="font-size: 12px">Email: jss0045@mix.wvu.edu</p>
