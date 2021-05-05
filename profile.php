@@ -31,6 +31,7 @@ if(isset($_SESSION['uid'])){
     $photo = $row['profpic'];
 
     ?>
+    <title>RecipeDaddy - <?php echo $prof_user?>'s Profile </title>
     <div class="bg-cover">
         <div class="h-50 center-me text-center">
             <div class="my-auto">

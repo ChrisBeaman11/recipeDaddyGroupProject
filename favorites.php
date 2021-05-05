@@ -5,7 +5,6 @@ session_start();
 
 <main>
 
-    <title>RecipeDaddy - Favorites</title>
     <link rel="stylesheet" href="css/gallery.css">
 
 <div class="about" >
@@ -18,14 +17,9 @@ session_start();
         <?php
             include_once 'includes/dbhandler.php';
             $userid = $_SESSION['uid'];
-            //echo $userid;
             $sql = 'SELECT * FROM favorites WHERE pid='.$userid.'';
-            //echo $sql;
             $query = mysqli_query($conn, $sql);
-            //echo $query;
-            //$row = mysqli_fetch_array($query);
             while($row = mysqli_fetch_assoc($query)) {
-                //echo $userid;
                 $sql1 = 'SELECT * FROM recipes where rid='.$row['rid'].'';
                 $query1 = mysqli_query($conn, $sql1);
                 $row1 = mysqli_fetch_assoc($query1);
@@ -40,6 +34,9 @@ session_start();
 
             }
         ?>
+
+<title>RecipeDaddy - <?php echo $userid?>'s Profile </title>
+
     </div>
     
     <div class="footer">
