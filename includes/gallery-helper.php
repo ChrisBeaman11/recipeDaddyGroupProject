@@ -54,9 +54,6 @@ if(isset($_POST['gallery-submit'])){
             header("Location: ../admin.php?success=UploadWin");
             exit();
         }
-            
-        
-
     }
 }
 else{
